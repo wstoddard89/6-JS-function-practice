@@ -54,8 +54,8 @@ console.assert(getLength('supercalifragilisticexpialidocious') === 34)
 
 // Q4
 // Write a function called `greaterThan` that takes
-// two parameters and returns `true` if the second
-// parameter is greater than the first. Otherwise
+// two parameters and returns `true` if the first
+// parameter is greater than the second. Otherwise
 // the function should return `false`.
 
 console.assert(greaterThan(2, 1) === true)

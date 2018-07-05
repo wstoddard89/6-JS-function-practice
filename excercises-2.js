@@ -53,4 +53,4 @@ console.assert(rovarspraket(0) === "0")
 
 
 console.assert(reverse("books") === "skoob")
- console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
