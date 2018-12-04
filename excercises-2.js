@@ -18,7 +18,7 @@ console.assert(maxOfThree(12,3,4) === 12)
 console.assert(maxOfThree(-12,4,-5) === 4)
 
 // ---------------------
-// Write a function that takes a character (i.e. a 
+// Write a function isVowel() that takes a character (i.e. a 
 // string of length 1) and returns true if it is a 
 // vowel, false otherwise.
 // ---------------------
@@ -31,7 +31,7 @@ console.assert(isVowel("E") === true);
 console.assert(isVowel("2") === false)
 
 // ---------------------
-// Write a function translate() that will translate 
+// Write a function rovarspraket() that will translate 
 // a text into "Rovarspraket". That is, double every 
 // consonant and place an occurrence of "o" in between. 
 // For example, translate("this is fun") should return 
