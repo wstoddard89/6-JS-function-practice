@@ -83,5 +83,7 @@ console.assert(greet("Iron Man") === "Hello, Iron Man!")
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 
+console.assert(madlib("quick","fox","jumps","fence")=== "The quick brown fox jumps over the fence.")
+console.assert(madlib("fat","rabbit","hops","wall")=== "The fat brown rabbit hops over the wall.")
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
