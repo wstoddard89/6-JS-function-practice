@@ -22,7 +22,13 @@ console.log(max(-23, 12))
 // ---------------------
 
 function maxOfThree(a, b, c) {
-  return Math.max(a, b, c)
+  if (a > b && a > c) {
+  return a
+} else if (b > a && b > c) {
+  return b
+} else if (c > a && c > b) {
+  return c 
+  }
 }
 
 console.log(maxOfThree(2,56,3))
@@ -58,16 +64,26 @@ console.log(isVowel("2"))
 // For example, translate("this is fun") should return 
 // the string "tothohisos isos fofunon".
 // ---------------------
-
-function rovarspraket() {
-
+function rovarspraket(text) {
+let vowels = ["a", "e", "i", "o", "u", " "] 
+let rovar = ""
+const newText = text.toString()
+for (i = 0; i < newText.length; i++) {
+  let currentChar = newText.charAt(i)
+  if (isVowel(currentChar)) {
+    rovar = rovar + currentChar
+  } else {
+    rovar = rovar + (currentChar + "o" + currentChar)
+    }
+  }
+return rovar
 }
 
-console.assert(rovarspraket("a") === "a")
-console.assert(rovarspraket("b") === "bob")
-console.assert(rovarspraket("cat") === "cocatot")
-console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-console.assert(rovarspraket(0) === "0")
+console.log(rovarspraket("a"))
+console.log(rovarspraket("b"))
+console.log(rovarspraket("cat"))
+console.log(rovarspraket("javascript"))
+console.log(rovarspraket(0))
 
 
 // ---------------------
@@ -79,9 +95,9 @@ console.assert(rovarspraket(0) === "0")
 function reverse(a) {
   let reversed = ""
   for (let i = a.length - 1; i >= 0; i--) {
-    reversed =+ a[i]
+    reversed += a[i];
   }
-  return reversed
+  return reversed;
 } 
 
 
